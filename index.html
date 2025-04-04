@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script>
+        // JavaScript to display alert when the form is submitted
+        function submitForm() {
+            alert('Your message has been sent!');
+        }
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333;">
+
+    <!-- Header Section -->
+    <header style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about" style="color: white; margin: 0 15px; text-decoration: none;">About</a>
+            <a href="#skills" style="color: white; margin: 0 15px; text-decoration: none;">Skills</a>
+            <a href="#projects" style="color: white; margin: 0 15px; text-decoration: none;">Projects</a>
+            <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 50px 20px; background-color: #fff; text-align: center;">
+        <h2>About Me</h2>
+        <p>Hi! I'm a passionate web developer with experience in front-end technologies. I love creating user-friendly, responsive websites and solving complex problems.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="padding: 50px 20px; background-color: #f1f1f1; text-align: center;">
+        <h2>Skills</h2>
+        <div style="display: flex; justify-content: center; gap: 30px;">
+            <div style="text-align: center;">
+                <h3>HTML</h3>
+                <p>Expert in creating semantic and accessible web pages.</p>
+            </div>
+            <div style="text-align: center;">
+                <h3>CSS</h3>
+                <p>Proficient in styling responsive and modern layouts using Flexbox and Grid.</p>
+            </div>
+            <div style="text-align: center;">
+                <h3>JavaScript</h3>
+                <p>Skilled in JavaScript for dynamic and interactive web pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="padding: 50px 20px; background-color: #fff; text-align: center;">
+        <h2>Projects</h2>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <div style="width: 250px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h3>Project 1</h3>
+                <p>Responsive website built using HTML, CSS, and JavaScript.</p>
+                <a href="#" style="color: #007bff; text-decoration: none;">View Project</a>
+            </div>
+            <div style="width: 250px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h3>Project 2</h3>
+                <p>Interactive to-do list app built using JavaScript.</p>
+                <a href="#" style="color: #007bff; text-decoration: none;">View Project</a>
+            </div>
+            <div style="width: 250px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h3>Project 3</h3>
+                <p>Portfolio website showcasing my work and skills.</p>
+                <a href="#" style="color: #007bff; text-decoration: none;">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 50px 20px; background-color: #f1f1f1; text-align: center;">
+        <h2>Contact</h2>
+        <form onsubmit="submitForm(); return false;" style="max-width: 500px; margin: 0 auto;">
+            <div style="margin-bottom: 15px;">
+                <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; height: 150px;"></textarea>
+            </div>
+            <button type="submit" style="background-color: #333; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
